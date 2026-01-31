@@ -169,7 +169,7 @@ body {
 /* Image Grid Section */
 .grid-section {
     padding: 5rem 0;
-    background: #f8f9fa;
+    background: linear-gradient(to right, #fff9c4, #f8bbd0);
 }
 
 .grid-container {
