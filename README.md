@@ -215,7 +215,7 @@ This project showcases a modern, responsive landing page for a food/restaurant b
 
 ## 🔗 Live Demo
 
-**View the live project**: [Open index.html](index.html)
+**View the live project**: [Live](https://simplotel-technologies-modern-front.vercel.app/)
 
 ## 📦 Repository
 
