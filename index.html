@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Foodie</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="desktop-toggle-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>GOURMET BURGERS</h1>
+                    <p>Indulge in our signature burgers featuring juicy patties, melted cheese, crisp lettuce, and toasted buns. Each burger is a masterpiece crafted to perfection and served hot.</p>
+                    <button class="cta-button">Order Now</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="Gourmet burger with fresh ingredients and premium quality">
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Grid Section -->
+    <section class="grid-section">
+        <div class="grid-container">
+            <div class="grid-images">
+                <div class="grid-item">
+                    <img src="images/grid1.jpg" alt="Restaurant interior">
+                </div>
+                <div class="grid-item">
+                    <img src="images/grid2.jpg" alt="Food plates">
+                </div>
+                <div class="grid-item">
+                    <img src="images/grid3.jpg" alt="Dining ambience">
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-card">
+                    <h3>FRESH INGREDIENTS</h3>
+                    <h2>QUALITY DINING EXPERIENCE</h2>
+                    <p>We source the finest ingredients and create memorable dishes that delight your senses. Every meal is crafted with passion and served with excellence.</p>
+                    <a href="#menu" class="cta-link">View Menu →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
