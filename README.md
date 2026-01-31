@@ -221,7 +221,7 @@ This project showcases a modern, responsive landing page for a food/restaurant b
 
 **GitHub Repository**: Add your repository link here
 ```bash
-git clone [your-repo-url]
+git clone [https://github.com/msd131102/Simplotel-Technologies-Modern-Frontend-Landing-Page]
 cd frontend-assignment
 ```
 
