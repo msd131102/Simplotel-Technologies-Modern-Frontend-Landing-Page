@@ -81,7 +81,8 @@ body {
 .desktop-toggle-icon img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* Makes the image white */
+    filter: brightness(0) invert(1);
+    /* Makes the image white */
 }
 
 .hamburger {
@@ -268,31 +269,31 @@ body {
         text-align: center;
         gap: 2rem;
     }
-    
+
     .hero-text h1 {
         font-size: 2.8rem;
     }
-    
+
     .hero-text p {
         margin: 0 auto 2rem;
     }
-    
+
     .hero-image {
         width: 100%;
         max-width: 500px;
     }
-    
+
     .grid-container {
         flex-direction: column;
         gap: 3rem;
     }
-    
+
     .grid-images {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     .content-card {
         text-align: center;
     }
@@ -303,50 +304,50 @@ body {
     .nav-menu {
         display: none;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .desktop-toggle-icon {
         display: none;
     }
-    
+
     .hero-text h1 {
         font-size: 2.2rem;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
     }
-    
+
     .hero-image {
         height: 300px;
     }
-    
+
     .grid-images {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .grid-item:first-child {
         grid-column: 1;
         grid-row: 1;
         height: 200px;
     }
-    
+
     .content-card {
         padding: 2rem;
     }
-    
+
     .content-card h3 {
         font-size: 1rem;
     }
-    
+
     .content-card h2 {
         font-size: 2rem;
     }
-    
+
     .content-card p {
         font-size: 1rem;
     }
