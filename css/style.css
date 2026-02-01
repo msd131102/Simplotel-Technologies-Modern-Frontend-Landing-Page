@@ -78,8 +78,10 @@ body {
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
-.desktop-toggle-icon svg {
-    color: white;
+.desktop-toggle-icon img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Makes the image white */
 }
 
 .hamburger {
@@ -351,17 +353,34 @@ body {
 }
 
 
+/* Desktop Menu Toggle */
+@media (min-width: 769px) {
+    .nav-menu.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
 /* Mobile Menu Toggle */
-.nav-menu.active {
-    display: flex;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+@media (max-width: 768px) {
+    .nav-menu.active {
+        display: flex;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .hamburger.active span:nth-child(1) {
